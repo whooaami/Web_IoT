@@ -1,0 +1,32 @@
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.hero__button {
+  margin-top: 45px;
+}
+
+.hero__elements {
+  display: inline;
+  padding-top: 60px;
+  position: absolute;
+}
+
+.hero__title {
+  font-size: 48px;
+  padding-top: 100px;
+  padding-bottom: 25px;
+  width: 427px;
+  height: 112px;
+}
+
+.hero__paragraph {
+  font-size: 21px;
+  line-height: 32px;
+  width: 385px;
+  height: 96px;
+}

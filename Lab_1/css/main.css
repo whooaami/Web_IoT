@@ -1,0 +1,45 @@
+.main {
+  padding: 200px;
+  background-image: url(../images/2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background: url(../images/2.png) no-repeat left;
+  margin-left: 140px;
+}
+
+.main__container {
+  width: 450px;
+  padding-top: 100px;
+  margin-left: 880px;
+}
+
+.main__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+
+  color: #000000;
+}
+
+.main__rectangle {
+  padding-top: 25px;
+}
+
+.main__paragraph {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 31px;
+
+  color: #7d7987;
+}
+
+.main__button {
+  margin-top: 39px;
+}
+
+.main__name__button {
+  font-weight: bold;
+  font-size: 18px;
+  color: #458ff6;
+}
