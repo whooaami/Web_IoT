@@ -1,0 +1,168 @@
+/* variables*/
+:root {
+  --color-dark: #111b47;
+  --color-font-dark: #091133;
+
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-xs: 0.75rem;
+}
+
+/*default overrides*/
+
+body {
+  font-family: "Mulish";
+  color: #1f1534;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #1f1534;
+}
+
+li {
+  display: block;
+}
+
+button {
+  border: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+p {
+  margin: 0;
+  font-weight: 300;
+  color: #7d7987;
+  mix-blend-mode: normal;
+}
+
+hr {
+  margin: 0;
+  width: 56px;
+  height: 2px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+tr {
+  background-color: #fff;
+  height: 354px;
+  /* drop shadow */
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+td {
+  background-color: #fff;
+  width: 350px;
+  height: 354px;
+  /* drop shadow */
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+}
+
+/* Global classes*/
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+@media screen and (min-width: 2560px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+.default-button {
+  width: 200px;
+  height: 56px;
+  background: #458ff6;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 4px 0;
+  cursor: pointer;
+  border-radius: 55px;
+}
+
+.default-button.outlined {
+  width: 200px;
+  height: 56px;
+  background: transparent;
+  color: #458ff6;
+  border: 2px solid #458ff6;
+  box-sizing: border-box;
+  padding: 4px 0;
+  cursor: pointer;
+  border-radius: 55px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.default-button.outlined:hover,
+.default-button.outlined:focus {
+  color: #fff;
+  outline: 0;
+}
