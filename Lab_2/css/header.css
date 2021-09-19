@@ -1,0 +1,132 @@
+.header__container {
+  padding-top: 20px;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__ellipse {
+  background: #458ff6;
+  color: #ffffff;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.header__logo-text {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #233348;
+}
+
+.header__nav ul {
+  padding-left: 0px;
+  display: flex;
+}
+
+.header__navHome {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__navItem {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__nav {
+    background: #e7ecff;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    clip-path: circle(0 at top left);
+    transition: clip-path 0.9s ease-in;
+  }
+
+  .header__nav.open {
+    clip-path: circle(1000px at top);
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .header__nav .header__navItem {
+    margin-right: 0;
+    padding-top: 10vh;
+    flex: 1;
+  }
+
+  .header__nav a {
+    font-weight: 500;
+    display: block;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__ellipse {
+    background: #458ff6;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .header__logo-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #233348;
+  }
+}
