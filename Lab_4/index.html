@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD JS App</title>
+
+    <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- Bootstrap 5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- UUID library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+  </head>
+
+  <body class="bg-light">
+    <div class="container p-3">
+      <div class="row mb-3">
+        <h1 class="text-center">Cars</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <form id="add_form" class="bg-light">
+            <h3 class="mb-3">Create card</h3>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name_input" required>
+              <span class="error" id="error_name"></span>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Color</label>
+              <input type="text" class="form-control" id="color_input" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Weight</label>
+              <input type="text" class="form-control" id="weight_input" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Price</label>
+              <input type="text" class="form-control" id="price_input" required>
+              <span class="error" id="error_price"></span>
+            </div>
+            <button id="submit_button" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+
+          <div class="mt-5">
+            <h4 class="mb-3">Find cards</h4>
+            <input id="find_input" type="text" class="form-control" />
+            <button id="find_button" type="button" class="btn btn-primary mt-4">
+              Find
+            </button>
+            <button
+              id="cancel_find_button"
+              type="button"
+              class="btn btn-danger mt-4"
+            >
+              Cancel
+            </button>
+          </div>
+
+          <div class="mt-5">
+            <select id="propertyForSorting" value="name">
+              <option value="weight">Weight</option>
+              <option value="price">Price</option>
+            </select>
+            <select id="orderSelector" value="ASC">
+              <option value="ASC">ASC</option>
+              <option value="DESC">DESC</option>
+            </select>
+          </div>
+
+          <div class="mt-5">
+            <select id="propertyForTotalValue" value="weight">
+              <option value="weight" id="price_opt">Weight</option>
+              <option value="price" id="weight_opt">Price</option>
+            </select>
+            <lebel id="totalValue"></lebel>
+          </div>
+        </div>
+
+        <ul id="items_container" class="col-md-4 mt-5 mt-md-2 mx-auto">
+
+        </ul>
+
+        <div class="col-md-4">
+          <div class="p-4">
+            <div class="delete-section">
+              <div class="text-center">
+                <img
+                  class="delete-section__icon mb-4"
+                  src="./assets/basket.svg"
+                  alt="basket"
+                />
+                <div>Drop here to delete</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

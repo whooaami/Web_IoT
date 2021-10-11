@@ -1,0 +1,66 @@
+.services {
+  background: url(../images/services/Frame.png) left bottom 420px no-repeat,
+    url(../images/services/element.svg) right 100px bottom -50px no-repeat;
+}
+
+.services__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.services__header {
+  text-align: center;
+}
+
+.services__title {
+  font-size: 36px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  width: 300px;
+  height: 56px;
+}
+
+.service__rectangle {
+  padding-top: 26px;
+}
+
+.services__paragraph {
+  margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 80px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 952px;
+  height: 60px;
+}
+
+.services__table {
+  margin: 0 auto;
+}
+
+table {
+  background: transparent;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 40px;
+  background-image: url(../images/services/services_element.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.table__paragraph {
+  font-size: 16px;
+  line-height: 28px;
+  width: 266px;
+  height: 84px;
+}
+
+.rectangle {
+  padding: 40px;
+}
+
+.services__button {
+  margin: 72px auto auto;
+  display: block;
+  margin-bottom: 100px;
+}
